@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<configuration xmlns="http://www.jooq.org/xsd/jooq-codegen-3.2.0.xsd">
+  <jdbc>
+    <driver>oracle.jdbc.OracleDriver</driver>
+    <url>jdbc:oracle:thin:@192.168.56.71:1521/ractp.localdomain</url>
+    <user>pmtdata</user>
+    <password>pmt</password>
+  </jdbc>
+  <generator>
+    <name>org.jooq.util.DefaultGenerator</name>
+    <database>
+      <name>org.jooq.util.oracle.OracleDatabase</name>
+      <inputSchema>pmtdata</inputSchema>
+      <excludes></excludes>
+    </database>
+    <target>
+      <packageName>com.evry.demo.entity</packageName>
+      <directory>/data/ws_evry/paymentdemo/src/main/java</directory>
+    </target>
+  </generator>
+</configuration>
