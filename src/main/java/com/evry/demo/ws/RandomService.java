@@ -52,14 +52,14 @@ public class RandomService extends SpringBeanAutowiringSupport   {
 	@WebMethod
 	public int nextInt(){
 		int i = test.getCount();
-		log.debug("LOGG: {}",i);
+		log.debug("LOGG INFO: {}",i);
 		return i;
 	}
 	
 	@WebMethod
 	public  CustomerRecord getCustomer(BigInteger id){
 		CustomerRecord c = cust.getCustomer(id);
-		log.debug("LOGG: CustomerService.getCustomer{}",c.getValue(2));
+		log.debug("LOGG INFO: CustomerService.getCustomer{}",c.getValue(2));
 		return c;
 	}
 	
